@@ -1,0 +1,24 @@
+{
+  "name": "mernp_auth",
+  "version": "1.0.0",
+  "description": "MERNP (MongoDB, ExpressJS, NodeJS, PassportJS) Authentication",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BSG-1/MERNP_Auth.git"
+  },
+  "author": "Bahadur Ghataorhe via CodeWorkr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BSG-1/MERNP_Auth/issues"
+  },
+  "homepage": "https://github.com/BSG-1/MERNP_Auth#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "morgan": "^1.9.0"
+  }
+}
