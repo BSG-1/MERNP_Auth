@@ -7,9 +7,10 @@ const app = express();
 
 //set up Middlewares
 app.use(morgan('dev'));
-app.use(bodyParser.json());
+app.use(bodyParser.json()); //allows express.js to parse the json
 
-//Load Routes
+//Routes
+
 
 //Start the server
 const port = process.env.PORT || 3000;
