@@ -10,7 +10,7 @@ app.use(morgan('dev'));
 app.use(bodyParser.json()); //allows express.js to parse the json
 
 //Routes
-
+app.use('/users', require('./routes/users'));
 
 //Start the server
 const port = process.env.PORT || 3000;
