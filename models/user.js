@@ -16,7 +16,7 @@ const userSchema = new Schema({
     }
 });
 
-//methods & functions to do the password validations
+//methods & functions to do the password validations, SALT'ing, hashing
 
 //create a model
 const User = mongoose.model('user', userSchema);
