@@ -46,6 +46,7 @@ module.exports = {
 
     secret: async (req, res, next) => {
         //no validation in a get request
-        // console.log('usersController.secret() called!');
+        console.log('I managed to get here!');
+        res.json({ secret: "resource" });
     }
 }

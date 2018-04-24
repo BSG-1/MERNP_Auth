@@ -5,7 +5,7 @@ const { JWT_SECRET } = require('./configuration');
 const User = require('./models/user')
 
 passport.use(new JwtStrategy({
-    jwtFromRequest: ExtractJwt.fromHeader('authorization'),
+    jwtFromRequest: ExtractJwt.fromHeader('Authorization'),
     secretOrKey: JWT_SECRET
 }, async (payload, done) => {
     try {
@@ -19,6 +19,7 @@ passport.use(new JwtStrategy({
 
         //Otherwise, return the user
         done(null, user);
+
     } catch (error) {
         done(error, false);
     }
