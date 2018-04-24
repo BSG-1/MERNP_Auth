@@ -1,6 +1,10 @@
 const express = require('express');
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
+const mongoose = require('mongoose');
+
+//connection via mongoose
+mongoose.connect('mongodb://localhost/MERNP_Auth');
 
 //New express instance
 const app = express();
